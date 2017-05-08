@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7145,32 +7145,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="CalvEngIO-Logo">
-<packages>
-<package name="LOGO.08">
-<text x="-8.382" y="-1.27" size="2.032" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
-</packages>
-<symbols>
-<symbol name="LOGO.1">
-<text x="0" y="0" size="3.81" layer="90" font="vector" ratio="15">@CalvEngIO</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LOGO.08">
-<gates>
-<gate name="G$1" symbol="LOGO.1" x="10.16" y="0"/>
-</gates>
-<devices>
-<device name="" package="LOGO.08">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CalvEngIO-Connectors">
 <packages>
 <package name="JMP.03X2">
@@ -12104,6 +12078,164 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="CalvEngIO-Passives">
+<packages>
+<package name="C0603">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="C0402">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.1174" y1="0.483" x2="1.1174" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.1174" y1="0.483" x2="1.1174" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.1174" y1="-0.483" x2="-1.1174" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.1174" y1="-0.483" x2="-1.1174" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="C.EU">
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
+<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAPACITOR" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="C.EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0402" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CalvEngIO-Logos">
+<packages>
+<package name="HANDLE.08">
+<text x="-8.382" y="-1.27" size="2.032" layer="21" font="vector" ratio="15">@CalvEngIO</text>
+</package>
+<package name="HANDLE.025">
+<text x="-2.54" y="0" size="0.635" layer="21" font="vector" ratio="15">@CalvEngIO</text>
+</package>
+<package name="HANDLE.1">
+<text x="-10.16" y="-1.27" size="2.54" layer="21" font="vector" ratio="15">@CalvEngIO</text>
+</package>
+<package name="HANDLE.05">
+<text x="-5.08" y="0" size="1.27" layer="21" font="vector" ratio="15">@CalvEngIO</text>
+</package>
+<package name="HANDLE.075">
+<text x="-7.62" y="0" size="1.905" layer="21" font="vector" ratio="15">@CalvEngIO</text>
+</package>
+</packages>
+<symbols>
+<symbol name="HANDLE.1">
+<text x="0" y="0" size="3.81" layer="90" font="vector" ratio="15">@CalvEngIO</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HANDLE.1">
+<gates>
+<gate name="G$1" symbol="HANDLE.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="HANDLE.025" package="HANDLE.025">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HANDLE.1" package="HANDLE.1">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HANDLE.05" package="HANDLE.05">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HANDLE.075" package="HANDLE.075">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HANDLE.08" package="HANDLE.08">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12119,26 +12251,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C2" library="resistor" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C1" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0603" value="100n"/>
+<part name="C2" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0603" value="100n"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LDO" library="CalvEngIO-Power" deviceset="AP2210-ADJ" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C3" library="resistor" deviceset="C-EU" device="C0402" value="100pF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0402" value="100pF"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="C5" library="resistor" deviceset="C-EU" device="C0603" value="2.2u"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="PWR" library="CalvEngIO-LED" deviceset="LED" device="0603"/>
+<part name="VDD" library="CalvEngIO-LED" deviceset="LED" device="0603"/>
 <part name="3.3V" library="CalvEngIO-LED" deviceset="LED" device="0603"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -12147,14 +12279,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="1k"/>
 <part name="3V3.SWITCH" library="CalvEngIO-Switches" deviceset="SWITCH.JS202011JCQN" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
-<part name="U$6" library="CalvEngIO-Logo" deviceset="LOGO.08" device=""/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
+<part name="U$6" library="CalvEngIO-Logos" deviceset="HANDLE.1" device="HANDLE.08"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="100k"/>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J2" library="CalvEngIO-Connectors" deviceset="JMP.03X2" device="HEADERS"/>
 <part name="J3" library="CalvEngIO-Connectors" deviceset="JMP.03X2" device="HEADERS"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="FD1" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="FD2" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$1" library="CalvEngIO-Logos" deviceset="HANDLE.1" device="HANDLE.025" value="HANDLE.1HANDLE.025"/>
 </parts>
 <sheets>
 <sheet>
@@ -12200,6 +12333,7 @@ CC-BY-SA-4.0</text>
 <wire x1="142.24" y1="101.6" x2="142.24" y2="-2.54" width="0.635" layer="94"/>
 <wire x1="142.24" y1="-2.54" x2="-53.34" y2="-2.54" width="0.635" layer="94"/>
 <wire x1="-53.34" y1="-2.54" x2="-53.34" y2="101.6" width="0.635" layer="94"/>
+<text x="60.96" y="104.14" size="2.54" layer="91">Rev 0.3</text>
 </plain>
 <instances>
 <instance part="LIPO" gate="G$1" x="-38.1" y="78.74"/>
@@ -12207,14 +12341,14 @@ CC-BY-SA-4.0</text>
 <instance part="GND2" gate="1" x="53.34" y="71.12"/>
 <instance part="SUPPLY3" gate="G$1" x="-27.94" y="78.74"/>
 <instance part="GND3" gate="1" x="-38.1" y="66.04"/>
-<instance part="C1" gate="G$1" x="-2.54" y="73.66" rot="R180"/>
-<instance part="C2" gate="G$1" x="30.48" y="73.66" rot="R180"/>
+<instance part="C1" gate="G$1" x="-2.54" y="76.2" rot="R180"/>
+<instance part="C2" gate="G$1" x="30.48" y="76.2" rot="R180"/>
 <instance part="GND4" gate="1" x="-2.54" y="66.04"/>
 <instance part="GND5" gate="1" x="30.48" y="66.04"/>
 <instance part="LDO" gate="G$1" x="-10.16" y="38.1"/>
 <instance part="SUPPLY4" gate="G$1" x="-27.94" y="48.26"/>
 <instance part="GND6" gate="1" x="-38.1" y="25.4"/>
-<instance part="C3" gate="G$1" x="7.62" y="30.48"/>
+<instance part="C5" gate="G$1" x="7.62" y="30.48"/>
 <instance part="GND7" gate="1" x="7.62" y="20.32"/>
 <instance part="C4" gate="G$1" x="-43.18" y="35.56" rot="R180"/>
 <instance part="J1" gate="J$1" x="71.12" y="76.2"/>
@@ -12223,10 +12357,10 @@ CC-BY-SA-4.0</text>
 <instance part="SUPPLY8" gate="G$1" x="91.44" y="76.2"/>
 <instance part="SUPPLY1" gate="VDD" x="0" y="83.82"/>
 <instance part="SUPPLY2" gate="VDD" x="33.02" y="83.82"/>
-<instance part="C5" gate="G$1" x="17.78" y="40.64"/>
+<instance part="C3" gate="G$1" x="17.78" y="40.64"/>
 <instance part="GND8" gate="1" x="17.78" y="30.48"/>
 <instance part="SUPPLY5" gate="G$1" x="7.62" y="48.26"/>
-<instance part="PWR" gate="G$1" x="104.14" y="73.66"/>
+<instance part="VDD" gate="G$1" x="104.14" y="73.66"/>
 <instance part="3.3V" gate="G$1" x="-27.94" y="15.24"/>
 <instance part="GND9" gate="1" x="-27.94" y="5.08"/>
 <instance part="GND10" gate="1" x="104.14" y="63.5"/>
@@ -12239,13 +12373,14 @@ CC-BY-SA-4.0</text>
 </instance>
 <instance part="SUPPLY12" gate="G$1" x="38.1" y="43.18"/>
 <instance part="U$6" gate="G$1" x="76.2" y="25.4"/>
-<instance part="R4" gate="G$1" x="55.88" y="17.78" rot="R90"/>
-<instance part="GND12" gate="1" x="55.88" y="7.62"/>
+<instance part="R3" gate="G$1" x="58.42" y="35.56" rot="R90"/>
+<instance part="GND12" gate="1" x="58.42" y="25.4"/>
 <instance part="J2" gate="G$1" x="10.16" y="78.74"/>
 <instance part="J3" gate="G$1" x="43.18" y="78.74"/>
 <instance part="LOGO1" gate="G$1" x="106.68" y="45.72"/>
 <instance part="FD1" gate="G$1" x="76.2" y="48.26"/>
 <instance part="FD2" gate="G$1" x="83.82" y="43.18"/>
+<instance part="U$1" gate="G$1" x="76.2" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -12271,12 +12406,12 @@ CC-BY-SA-4.0</text>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-2.54" y1="68.58" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="71.12" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="30.48" y1="68.58" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="71.12" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LDO" gate="G$1" pin="GND"/>
@@ -12290,12 +12425,12 @@ CC-BY-SA-4.0</text>
 <junction x="-38.1" y="30.48"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="7.62" y1="22.86" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="17.78" y1="33.02" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -12305,14 +12440,14 @@ CC-BY-SA-4.0</text>
 <wire x1="-27.94" y1="7.62" x2="-27.94" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="C"/>
+<pinref part="VDD" gate="G$1" pin="C"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="104.14" y1="66.04" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="55.88" y1="10.16" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -12382,7 +12517,7 @@ CC-BY-SA-4.0</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LDO" gate="G$1" pin="BYP/ADJ"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="35.56" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 </segment>
@@ -12398,7 +12533,7 @@ CC-BY-SA-4.0</text>
 <pinref part="LDO" gate="G$1" pin="OUT"/>
 <wire x1="5.08" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="45.72" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="43.18" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
@@ -12415,7 +12550,7 @@ CC-BY-SA-4.0</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="PWR" gate="G$1" pin="A"/>
+<pinref part="VDD" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="78.74" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -12432,30 +12567,12 @@ CC-BY-SA-4.0</text>
 </segment>
 <segment>
 <pinref part="3V3.SWITCH" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<label x="55.88" y="43.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="3V3.SWITCH" gate="G$1" pin="6"/>
-<wire x1="43.18" y1="33.02" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="33.02" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="3V3.SWITCH" gate="G$1" pin="7"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="3V3.SWITCH" gate="G$1" pin="5"/>
-<wire x1="55.88" y1="25.4" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="35.56" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<junction x="55.88" y="30.48"/>
-<pinref part="3V3.SWITCH" gate="G$1" pin="3"/>
-<wire x1="53.34" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
-<junction x="55.88" y="35.56"/>
-<wire x1="40.64" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<junction x="55.88" y="25.4"/>
+<wire x1="53.34" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<label x="60.96" y="43.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="40.64" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
+<junction x="58.42" y="43.18"/>
 </segment>
 </net>
 </nets>
