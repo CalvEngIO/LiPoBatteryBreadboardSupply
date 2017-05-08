@@ -12258,7 +12258,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LDO" library="CalvEngIO-Power" deviceset="AP2210-ADJ" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C5" library="resistor" deviceset="C-EU" device="C0402" value="100pF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0402" value="47pF"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
